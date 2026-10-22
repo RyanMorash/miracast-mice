@@ -1,0 +1,10 @@
+miracast-mice
+Copyright 2026
+
+This product includes DTLS record framing, the AES-GCM nonce and
+additional-data layout, and the TLS 1.2 PRF adapted from
+hue-entertainment
+(https://github.com/music-assistant/hue-entertainment),
+file hue_entertainment/dtls.py.
+Copyright music-assistant contributors.
+Licensed under the Apache License, Version 2.0.

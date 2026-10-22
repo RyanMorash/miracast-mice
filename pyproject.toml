@@ -1,0 +1,23 @@
+[project]
+name = "miracast-mice"
+version = "0.1.0"
+description = "Miracast over Infrastructure and Wi-Fi Display RTSP"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = ["cryptography>=42"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+cache_dir = "/tmp/mice-pytest-cache"
